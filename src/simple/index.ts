@@ -1,6 +1,6 @@
 import { Http, Response } from 'farrow-http'
 
-const http = Http()
+const http = Http({ logger: false })
 
 http.use(() => {
   return Response.text('Hello Farrow.')
