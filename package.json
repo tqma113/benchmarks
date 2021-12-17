@@ -15,6 +15,9 @@
     "start": "farrow start",
     "start:sample": "farrow start --config=farrow.sample.config.js",
     "start:schema": "farrow start --config=farrow.schema.config.js",
+    "doctor": "clinic doctor -- node ./dist/simple/index.js",
+    "bubbleprof": "clinic bubbleprof -- node ./dist/simple/index.js",
+    "flame": "clinic flame -- node ./dist/simple/index.js",
     "bench": "branchcmp -r 2 -g -s \"npm run benchmark\"",
     "benchmark": "npx concurrently -k -s first \"node ./dist/simple/index.js\" \"npx autocannon -c 100 -d 30 -p 10 localhost:3000/\""
   },
